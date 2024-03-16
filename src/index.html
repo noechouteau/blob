@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blobby</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <canvas class="webgl"></canvas>
+
+    <div id="buttonGroup">
+        <div style="display:flex;flex-direction: column;">
+        <img id="musicBtn" src="note.png" alt=""></img>
+        </div>
+        <div style="display:flex;height:125px;">
+            <div class="track-info">
+                <div>            
+                    <h4>Your file</h4>
+                    <div id="fileInfos">
+                        <label for="file">Choose...</label>
+                        <p id="fileName">Actual song : </br>Dancin - Aaron Smith (Krono remix)</p>
+                    </div>
+                    <input id="file" type="file" style="display: none;" accept="audio/*">
+                </div>
+
+            </div>
+        </div>
+        
+        <div class="botón" onclick="this.classList.toggle('active')">
+            <label>Play</label>
+        </div>
+    </div>
+    <div id="snackbar">
+        hh
+        <button id="closeSnackbar">OK</button>
+    </div>
+
+
+    <script type="module" src="./script.js"></script>
+</body>
+</html>
